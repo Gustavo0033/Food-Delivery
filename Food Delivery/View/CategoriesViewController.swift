@@ -23,7 +23,7 @@ class CategoriesViewController: UIViewController {
 
     var imagesSpecialMenu: [String] = ["imageTaco", "imageBurguerClub","imageTaco", "imageBurguerClub"]
     var labelSpecial: [String] = ["The Taco Company", "The Burguer Club","The Taco Company", "The Burguer Club"]
-    var coresBGMenu: [String] = ["BgIconSalad","purpleBgMenu","BgIconSalad","purpleBgMenu"]
+    var coresBGMenu: [String] = ["BgIconSalad","purpleBgMenu","BgIconBurguer","purpleBgMenu"]
     
     
     
@@ -81,6 +81,8 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
         }
         return UICollectionViewCell()
     }
+    
+
     
     
 }
