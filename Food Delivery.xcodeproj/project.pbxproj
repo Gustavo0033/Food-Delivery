@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6550B702BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */; };
 		F68103F42BC98C0800556D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F32BC98C0800556D62 /* AppDelegate.swift */; };
 		F68103F62BC98C0800556D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F52BC98C0800556D62 /* SceneDelegate.swift */; };
 		F68103F82BC98C0800556D62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F72BC98C0800556D62 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68103F02BC98C0800556D62 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68103F32BC98C0800556D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F68103F52BC98C0800556D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */,
+				F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				F68104092BC991C200556D62 /* CategoriesViewController.swift in Sources */,
 				F68103F62BC98C0800556D62 /* SceneDelegate.swift in Sources */,
 				F681040C2BC9960900556D62 /* CategoriesCollectionViewCell.swift in Sources */,
+				F6550B702BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

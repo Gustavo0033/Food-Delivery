@@ -10,4 +10,9 @@ import UIKit
 class CategoriesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var iconCategorie: UIImageView!
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
 }
