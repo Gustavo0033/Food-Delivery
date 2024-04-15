@@ -8,22 +8,42 @@
 import UIKit
 
 class FoodCategoryViewController: UIViewController {
-
+    
+    var cardFood: [String] = ["cardPizza", "cardTaco", "cardChinese", "cardChicken","cardPizza", "cardTaco", "cardChinese", "cardChicken"]
+    
+    
+    @IBOutlet weak var collectionFoodCategory: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+
+}
+
+extension FoodCategoryViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cardFood.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FoodCategoryCollectionViewCell
+        
+        cell.iimageCard.image = UIImage(named: cardFood[indexPath.row])
+        
+        return cell
+    }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
