@@ -21,31 +21,37 @@ class TrackFoodViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
-        
-        let deltaLatitude: CLLocationDegrees = 0.01
-        let deltaLongitude: CLLocationDegrees = 0.01
-        
-        let latitude: CLLocationDegrees = -23.54993
-        let longitude: CLLocationDegrees = -46.625283
-        
-        let localizacao: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        let areaVisualizada: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: deltaLatitude, longitudeDelta: deltaLongitude)
-        
-        let regiao: MKCoordinateRegion = MKCoordinateRegion(center: localizacao, span: areaVisualizada)
-
-        
-        
-        trackMap.setRegion(regiao, animated: true)
+    
         
 
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Pegando e mostrando a localizacao do usuario
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        
+        let localizacaoUsuario: CLLocation = locations.last!
+        
+        let latitude: CLLocationDegrees = localizacaoUsuario.coordinate.latitude
+        let longitude: CLLocationDegrees = localizacaoUsuario.coordinate.longitude
+
+        let deltaLatitude: CLLocationDegrees = 0.01
+        let deltaLongitude: CLLocationDegrees = 0.01
+        
+        let localizacao: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        let areaVisualizacao: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: deltaLatitude, longitudeDelta: deltaLongitude)
+        
+        let regiao: MKCoordinateRegion = MKCoordinateRegion(center: localizacao, span: areaVisualizacao)
+        
+        trackMap.setRegion(regiao, animated: true)
+    }
+    
 
     
     
-
+    //MARK: - Solicitando permissão de acesso à localizacao do user
 }
 
 extension TrackFoodViewController:MKMapViewDelegate, CLLocationManagerDelegate{
