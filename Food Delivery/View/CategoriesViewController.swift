@@ -9,11 +9,16 @@ import UIKit
 
 class CategoriesViewController: UIViewController {
 
+    
+
     @IBOutlet weak var collectionViewCategories: UICollectionView!
     @IBOutlet weak var collectionViewSpecialMenu: UICollectionView!
+    @IBOutlet weak var collectionViewFeatured: UICollectionView!
+    
     
     let CategoriesCollectionViewCell = "cellCategorie"
     let SpecialMenuCollectionViewCell = "cellSpecial"
+    let FeaturedCollectionViewCell = "cellFeatured"
     
     
     //MARK: - images from popular categories
@@ -22,8 +27,14 @@ class CategoriesViewController: UIViewController {
     //MARK: - image, label and BgColor from special Menu
 
     var imagesSpecialMenu: [String] = ["imageTaco", "imageBurguerClub","imageTaco", "imageBurguerClub"]
-    var labelSpecial: [String] = ["The Taco Company", "The Burguer Club","The Taco Company", "The Burguer Club"]
-    var coresBGMenu: [String] = ["BgIconSalad","purpleBgMenu","BgIconBurguer","purpleBgMenu"]
+    var FoodsName: [String] = ["The Taco Company", "The Burguer Club", "The Taco Campany", "The Burguer Club"]
+    var bgSpecialMenu: [String] = ["BgIconPizza", "purpleBgMenu","BgIconPizza", "purpleBgMenu"]
+    var countryFood: [String] = ["Mexican", "American", "Mexican", "American"]
+    
+    //MARK: - Image Featured restaurants
+    
+    var imagesFeatured: [String] = ["chickenImage", "chickenImage","chickenImage", "chickenImage"]
+    
     
     
     
@@ -35,6 +46,11 @@ class CategoriesViewController: UIViewController {
         
         collectionViewSpecialMenu.delegate = self
         collectionViewSpecialMenu.dataSource = self
+        
+        collectionViewFeatured.delegate = self
+        collectionViewFeatured.dataSource = self
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -50,6 +66,7 @@ class CategoriesViewController: UIViewController {
 
 
 //MARK: - Adding two CollectionViews in one ViewController
+
 extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -57,6 +74,8 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
             return images.count
         } else if collectionView == self.collectionViewSpecialMenu{
             return imagesSpecialMenu.count
+        }else if collectionView == self.collectionViewFeatured{
+            return imagesFeatured.count
         }
         return 0
     }
@@ -72,18 +91,26 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
             let cellSpecial = collectionViewSpecialMenu.dequeueReusableCell(withReuseIdentifier: SpecialMenuCollectionViewCell, for: indexPath) as! SpecialMenuCollectionViewCell
             
             cellSpecial.imageFood.image = UIImage(named: imagesSpecialMenu[indexPath.row])
-            cellSpecial.labelFood.text = labelSpecial[indexPath.row]
-            //cellSpecial.viewSpecialMenu.tintColor = UIColor(named: coresBGMenu[indexPath.row])
-            cellSpecial.viewSpecialMenu.backgroundColor = UIColor(named: coresBGMenu[indexPath.row])
+            cellSpecial.labelFood.text = FoodsName[indexPath.row]
+            cellSpecial.labelCountry.text = countryFood[indexPath.row]
+            cellSpecial.viewSpecialMenu.backgroundColor = UIColor(named: bgSpecialMenu[indexPath.row])
             
             return cellSpecial
+            
+        }else if collectionView == self.collectionViewFeatured{
+            let cellFeatured = collectionViewFeatured.dequeueReusableCell(withReuseIdentifier: FeaturedCollectionViewCell, for: indexPath) as! FeaturedCollectionViewCell
+            
+            cellFeatured.imageFeatured.image = UIImage(named: imagesFeatured[indexPath.row])
+            
+            return cellFeatured
 
         }
         return UICollectionViewCell()
     }
     
-
+    
+    
+    
     
     
 }
-

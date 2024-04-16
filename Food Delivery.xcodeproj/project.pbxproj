@@ -19,6 +19,7 @@
 		F681040C2BC9960900556D62 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */; };
 		F68206672BCD6B7500FF67BA /* TrackFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68206662BCD6B7500FF67BA /* TrackFoodViewController.swift */; };
 		F68206692BCD77ED00FF67BA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68206682BCD77ED00FF67BA /* ProfileViewController.swift */; };
+		F685AE5F2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685AE5E2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift */; };
 		F6C3FD412BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3FD402BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68206662BCD6B7500FF67BA /* TrackFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFoodViewController.swift; sourceTree = "<group>"; };
 		F68206682BCD77ED00FF67BA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F685AE5E2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6C3FD402BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */,
 				F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */,
 				F6C3FD402BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift */,
+				F685AE5E2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				F68103F82BC98C0800556D62 /* ViewController.swift in Sources */,
 				F68103F42BC98C0800556D62 /* AppDelegate.swift in Sources */,
+				F685AE5F2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift in Sources */,
 				F68206692BCD77ED00FF67BA /* ProfileViewController.swift in Sources */,
 				F68104092BC991C200556D62 /* CategoriesViewController.swift in Sources */,
 				F68103F62BC98C0800556D62 /* SceneDelegate.swift in Sources */,
