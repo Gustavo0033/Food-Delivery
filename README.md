@@ -1,6 +1,4 @@
 
-![(https://www.figma.com/file/fawiEZOZyOPFrmaifpyaaT/Food-Delivery-App-UI-with-Illustrations-(Community)?type=design&node-id=1215-159&mode=design&t=WZK8CInmAhuxbJ9t-0)]
-
 
 # Food Delivery App
 
