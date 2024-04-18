@@ -103,14 +103,14 @@
             <objects>
                 <viewController id="EPM-1a-fYn" customClass="CategoriesViewController" customModule="Food_Delivery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Fai-Ot-dbt">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yzr-4v-w3Z">
-                                <rect key="frame" x="0.0" y="109" width="393" height="1191"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="660"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39t-b6-g9o">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1191"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's special menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-JK-Ncu">
                                                 <rect key="frame" x="15" y="175" width="260" height="32"/>
@@ -413,10 +413,10 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="iB1-Ed-HkU" secondAttribute="trailing" constant="6" id="3FW-sb-WZB"/>
                                             <constraint firstAttribute="trailing" secondItem="xB5-93-2gV" secondAttribute="trailing" constant="134" id="3XM-ym-oCR"/>
+                                            <constraint firstAttribute="height" constant="1300" id="50g-Z2-P4N"/>
                                             <constraint firstItem="iB1-Ed-HkU" firstAttribute="leading" secondItem="39t-b6-g9o" secondAttribute="leading" constant="15" id="5Mg-Y7-bLc"/>
                                             <constraint firstItem="8KK-JK-Ncu" firstAttribute="top" secondItem="iB1-Ed-HkU" secondAttribute="bottom" constant="20" id="5yb-et-Gt5"/>
                                             <constraint firstAttribute="trailing" secondItem="MHT-uH-uhy" secondAttribute="trailing" constant="150" id="6BT-XJ-G48"/>
-                                            <constraint firstAttribute="width" constant="393" id="8Qn-9f-YAe"/>
                                             <constraint firstItem="xB5-93-2gV" firstAttribute="leading" secondItem="39t-b6-g9o" secondAttribute="leading" constant="15" id="8v3-YW-iQN"/>
                                             <constraint firstItem="d7T-4E-fl2" firstAttribute="top" secondItem="8KK-JK-Ncu" secondAttribute="bottom" constant="8" symbolic="YES" id="93m-B9-eUt"/>
                                             <constraint firstItem="MHT-uH-uhy" firstAttribute="leading" secondItem="39t-b6-g9o" secondAttribute="leading" constant="15" id="9j1-Le-0Ru"/>
@@ -425,7 +425,6 @@
                                             <constraint firstAttribute="trailing" secondItem="cSi-yc-ZDr" secondAttribute="trailing" constant="6" id="Fxb-5p-lgT"/>
                                             <constraint firstItem="iB1-Ed-HkU" firstAttribute="top" secondItem="MHT-uH-uhy" secondAttribute="bottom" constant="8" symbolic="YES" id="NS8-q1-big"/>
                                             <constraint firstAttribute="trailing" secondItem="d7T-4E-fl2" secondAttribute="trailing" constant="6" id="O2V-7a-iyQ"/>
-                                            <constraint firstAttribute="height" constant="1191" id="dm8-If-nRo"/>
                                             <constraint firstItem="8KK-JK-Ncu" firstAttribute="leading" secondItem="39t-b6-g9o" secondAttribute="leading" constant="15" id="iCW-ty-edG"/>
                                             <constraint firstItem="cSi-yc-ZDr" firstAttribute="top" secondItem="xB5-93-2gV" secondAttribute="bottom" constant="7" id="kcj-X2-MVK"/>
                                             <constraint firstItem="MHT-uH-uhy" firstAttribute="top" secondItem="39t-b6-g9o" secondAttribute="top" constant="12" id="uqq-d0-gaZ"/>
@@ -434,12 +433,10 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1191" id="0Tb-0C-aH4"/>
-                                    <constraint firstAttribute="bottom" secondItem="39t-b6-g9o" secondAttribute="bottom" id="D7P-IT-y72"/>
-                                    <constraint firstAttribute="trailing" secondItem="39t-b6-g9o" secondAttribute="trailing" id="GA9-mb-zr6"/>
-                                    <constraint firstAttribute="width" constant="393" id="NC2-hk-LNE"/>
-                                    <constraint firstItem="39t-b6-g9o" firstAttribute="leading" secondItem="Yzr-4v-w3Z" secondAttribute="leading" id="SEX-7S-JPw"/>
-                                    <constraint firstItem="39t-b6-g9o" firstAttribute="top" secondItem="Yzr-4v-w3Z" secondAttribute="top" id="qJ6-3l-nLI"/>
+                                    <constraint firstAttribute="bottom" secondItem="39t-b6-g9o" secondAttribute="bottom" id="7mi-Eu-F11"/>
+                                    <constraint firstItem="39t-b6-g9o" firstAttribute="leading" secondItem="Yzr-4v-w3Z" secondAttribute="leading" id="J2J-Bx-mSW"/>
+                                    <constraint firstAttribute="trailing" secondItem="39t-b6-g9o" secondAttribute="trailing" id="brh-Uq-SrT"/>
+                                    <constraint firstItem="39t-b6-g9o" firstAttribute="top" secondItem="Yzr-4v-w3Z" secondAttribute="top" id="gt6-kC-Z8c"/>
                                 </constraints>
                             </scrollView>
                             <searchBar clipsSubviews="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xbp-MS-R6K">
@@ -471,13 +468,17 @@
                         <constraints>
                             <constraint firstItem="Yzr-4v-w3Z" firstAttribute="leading" secondItem="x0O-5Q-FHK" secondAttribute="leading" id="2KT-po-AtF"/>
                             <constraint firstAttribute="trailing" secondItem="Xbp-MS-R6K" secondAttribute="trailing" constant="16" id="5N6-ck-Kvf"/>
+                            <constraint firstItem="Yzr-4v-w3Z" firstAttribute="top" secondItem="Xbp-MS-R6K" secondAttribute="bottom" constant="6" id="A0M-us-fHl"/>
+                            <constraint firstItem="Yzr-4v-w3Z" firstAttribute="bottom" secondItem="x0O-5Q-FHK" secondAttribute="bottom" id="Dub-D4-Qkf"/>
+                            <constraint firstItem="Yzr-4v-w3Z" firstAttribute="leading" secondItem="x0O-5Q-FHK" secondAttribute="leading" id="FXT-YY-hwd"/>
                             <constraint firstItem="Yzr-4v-w3Z" firstAttribute="top" secondItem="Xbp-MS-R6K" secondAttribute="bottom" constant="6" id="IlE-X5-xY2"/>
                             <constraint firstItem="Xbp-MS-R6K" firstAttribute="top" secondItem="Fai-Ot-dbt" secondAttribute="top" constant="59" id="Wgl-iX-v23"/>
                             <constraint firstItem="ntS-4l-kDR" firstAttribute="leading" secondItem="Fai-Ot-dbt" secondAttribute="leading" constant="16" id="XMT-F9-6YO"/>
-                            <constraint firstAttribute="bottom" secondItem="Yzr-4v-w3Z" secondAttribute="bottom" id="Ybb-rj-voi"/>
                             <constraint firstItem="Xbp-MS-R6K" firstAttribute="leading" secondItem="ntS-4l-kDR" secondAttribute="trailing" constant="18" id="YdR-Ph-Gyu"/>
                             <constraint firstItem="Yzr-4v-w3Z" firstAttribute="trailing" secondItem="x0O-5Q-FHK" secondAttribute="trailing" id="mv2-UM-Xrc"/>
+                            <constraint firstItem="Yzr-4v-w3Z" firstAttribute="trailing" secondItem="x0O-5Q-FHK" secondAttribute="trailing" id="rwT-oo-lFF"/>
                             <constraint firstItem="ntS-4l-kDR" firstAttribute="top" secondItem="Fai-Ot-dbt" secondAttribute="top" constant="59" id="wbM-xB-oxM"/>
+                            <constraint firstItem="39t-b6-g9o" firstAttribute="width" secondItem="Fai-Ot-dbt" secondAttribute="width" id="z0w-hW-0WL"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -486,7 +487,6 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="6ew-af-avz"/>
-                    <size key="freeformSize" width="393" height="1300"/>
                     <connections>
                         <outlet property="collectionViewCategories" destination="iB1-Ed-HkU" id="xtE-tC-iLb"/>
                         <outlet property="collectionViewFeatured" destination="cSi-yc-ZDr" id="Ucg-ht-fim"/>
