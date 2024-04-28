@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CA4A4EA7C844C47357C555A /* Pods_Food_Delivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACF33A878E7027A8F4CEC53 /* Pods_Food_Delivery.framework */; };
 		F614A97C2BC9BDB9003A693A /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614A97B2BC9BDB9003A693A /* FoodCategoryViewController.swift */; };
+		F61E1C172BD7E12D00E2D238 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61E1C162BD7E12D00E2D238 /* ProfileViewController.swift */; };
+		F63C688F2BD7467200A5947B /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63C688E2BD7467200A5947B /* Alerta.swift */; };
+		F64B20302BD752D2009BD3CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B202F2BD752D2009BD3CA /* LoginViewController.swift */; };
 		F6550B702BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */; };
+		F65D92632BD93101000E7C14 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D92622BD93101000E7C14 /* ValidationViewController.swift */; };
+		F65D92652BD93192000E7C14 /* NumeroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D92642BD93192000E7C14 /* NumeroManager.swift */; };
+		F65D92672BD936FC000E7C14 /* NumeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D92662BD936FC000E7C14 /* NumeroData.swift */; };
+		F65D92692BD93865000E7C14 /* NumeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65D92682BD93865000E7C14 /* NumeroModel.swift */; };
 		F68103F42BC98C0800556D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F32BC98C0800556D62 /* AppDelegate.swift */; };
 		F68103F62BC98C0800556D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F52BC98C0800556D62 /* SceneDelegate.swift */; };
 		F68103F82BC98C0800556D62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68103F72BC98C0800556D62 /* ViewController.swift */; };
@@ -18,14 +26,35 @@
 		F68104092BC991C200556D62 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68104082BC991C200556D62 /* CategoriesViewController.swift */; };
 		F681040C2BC9960900556D62 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */; };
 		F68206672BCD6B7500FF67BA /* TrackFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68206662BCD6B7500FF67BA /* TrackFoodViewController.swift */; };
-		F68206692BCD77ED00FF67BA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68206682BCD77ED00FF67BA /* ProfileViewController.swift */; };
+		F68206692BCD77ED00FF67BA /* RateFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68206682BCD77ED00FF67BA /* RateFoodViewController.swift */; };
 		F685AE5F2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685AE5E2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift */; };
+		F6A8892D2BD6BB66000A8BA3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F6A8892C2BD6BB66000A8BA3 /* FirebaseAnalytics */; };
+		F6A8892F2BD6BB66000A8BA3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F6A8892E2BD6BB66000A8BA3 /* FirebaseAuth */; };
+		F6A889312BD6BB66000A8BA3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F6A889302BD6BB66000A8BA3 /* FirebaseDatabase */; };
+		F6A889332BD6BB66000A8BA3 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6A889322BD6BB66000A8BA3 /* FirebaseDatabaseSwift */; };
+		F6A889352BD6BB66000A8BA3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F6A889342BD6BB66000A8BA3 /* FirebaseFirestore */; };
+		F6A889372BD6BB66000A8BA3 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F6A889362BD6BB66000A8BA3 /* FirebaseFunctions */; };
+		F6A889392BD6BB66000A8BA3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F6A889382BD6BB66000A8BA3 /* FirebaseStorage */; };
+		F6A8893C2BD6BC6C000A8BA3 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F6A8893B2BD6BC6C000A8BA3 /* GoogleSignIn */; };
+		F6A8893E2BD6BC6C000A8BA3 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6A8893D2BD6BC6C000A8BA3 /* GoogleSignInSwift */; };
+		F6A889402BD6BD47000A8BA3 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A8893F2BD6BD47000A8BA3 /* CadastroViewController.swift */; };
 		F6C3FD412BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3FD402BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift */; };
+		F6C6070A2BDBEB3C007A4AD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6C607092BDBEB3C007A4AD5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ACF33A878E7027A8F4CEC53 /* Pods_Food_Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		355808CC80434F97C7AB6FE1 /* Pods-Food Delivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Delivery.release.xcconfig"; path = "Target Support Files/Pods-Food Delivery/Pods-Food Delivery.release.xcconfig"; sourceTree = "<group>"; };
+		A451CB437B8EDB205AA1E159 /* Pods-Food Delivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Delivery.debug.xcconfig"; path = "Target Support Files/Pods-Food Delivery/Pods-Food Delivery.debug.xcconfig"; sourceTree = "<group>"; };
 		F614A97B2BC9BDB9003A693A /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
+		F61E1C162BD7E12D00E2D238 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F63C688E2BD7467200A5947B /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		F64B202F2BD752D2009BD3CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F6550B6F2BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		F65D92622BD93101000E7C14 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
+		F65D92642BD93192000E7C14 /* NumeroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeroManager.swift; sourceTree = "<group>"; };
+		F65D92662BD936FC000E7C14 /* NumeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeroData.swift; sourceTree = "<group>"; };
+		F65D92682BD93865000E7C14 /* NumeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeroModel.swift; sourceTree = "<group>"; };
 		F68103F02BC98C0800556D62 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68103F32BC98C0800556D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F68103F52BC98C0800556D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +66,11 @@
 		F68104082BC991C200556D62 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		F681040B2BC9960900556D62 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68206662BCD6B7500FF67BA /* TrackFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFoodViewController.swift; sourceTree = "<group>"; };
-		F68206682BCD77ED00FF67BA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F68206682BCD77ED00FF67BA /* RateFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateFoodViewController.swift; sourceTree = "<group>"; };
 		F685AE5E2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6A8893F2BD6BD47000A8BA3 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		F6C3FD402BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6C607092BDBEB3C007A4AD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +78,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A889332BD6BB66000A8BA3 /* FirebaseDatabaseSwift in Frameworks */,
+				F6A889312BD6BB66000A8BA3 /* FirebaseDatabase in Frameworks */,
+				F6A8892D2BD6BB66000A8BA3 /* FirebaseAnalytics in Frameworks */,
+				F6A889372BD6BB66000A8BA3 /* FirebaseFunctions in Frameworks */,
+				F6A889392BD6BB66000A8BA3 /* FirebaseStorage in Frameworks */,
+				F6A8893E2BD6BC6C000A8BA3 /* GoogleSignInSwift in Frameworks */,
+				F6A889352BD6BB66000A8BA3 /* FirebaseFirestore in Frameworks */,
+				F6A8892F2BD6BB66000A8BA3 /* FirebaseAuth in Frameworks */,
+				F6A8893C2BD6BC6C000A8BA3 /* GoogleSignIn in Frameworks */,
+				6CA4A4EA7C844C47357C555A /* Pods_Food_Delivery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19268230F48A444598AFFE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF33A878E7027A8F4CEC53 /* Pods_Food_Delivery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A577BF20242C07242E51EA44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A451CB437B8EDB205AA1E159 /* Pods-Food Delivery.debug.xcconfig */,
+				355808CC80434F97C7AB6FE1 /* Pods-Food Delivery.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F63C688D2BD7434D00A5947B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F63C688E2BD7467200A5947B /* Alerta.swift */,
+				F65D92642BD93192000E7C14 /* NumeroManager.swift */,
+				F65D92662BD936FC000E7C14 /* NumeroData.swift */,
+				F65D92682BD93865000E7C14 /* NumeroModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F68103E72BC98C0800556D62 = {
 			isa = PBXGroup;
 			children = (
 				F68103F22BC98C0800556D62 /* Food Delivery */,
 				F68103F12BC98C0800556D62 /* Products */,
+				A577BF20242C07242E51EA44 /* Pods */,
+				19268230F48A444598AFFE94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +143,7 @@
 		F68103F22BC98C0800556D62 /* Food Delivery */ = {
 			isa = PBXGroup;
 			children = (
+				F63C688D2BD7434D00A5947B /* Model */,
 				F681040A2BC995F600556D62 /* Cell */,
 				F68104072BC991AD00556D62 /* View */,
 				F68103F32BC98C0800556D62 /* AppDelegate.swift */,
@@ -80,6 +152,7 @@
 				F68103FC2BC98C0A00556D62 /* Assets.xcassets */,
 				F68103FE2BC98C0A00556D62 /* LaunchScreen.storyboard */,
 				F68104012BC98C0A00556D62 /* Info.plist */,
+				F6C607092BDBEB3C007A4AD5 /* GoogleService-Info.plist */,
 			);
 			path = "Food Delivery";
 			sourceTree = "<group>";
@@ -91,7 +164,11 @@
 				F68104082BC991C200556D62 /* CategoriesViewController.swift */,
 				F614A97B2BC9BDB9003A693A /* FoodCategoryViewController.swift */,
 				F68206662BCD6B7500FF67BA /* TrackFoodViewController.swift */,
-				F68206682BCD77ED00FF67BA /* ProfileViewController.swift */,
+				F68206682BCD77ED00FF67BA /* RateFoodViewController.swift */,
+				F6A8893F2BD6BD47000A8BA3 /* CadastroViewController.swift */,
+				F64B202F2BD752D2009BD3CA /* LoginViewController.swift */,
+				F61E1C162BD7E12D00E2D238 /* ProfileViewController.swift */,
+				F65D92622BD93101000E7C14 /* ValidationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,15 +191,28 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F68104042BC98C0A00556D62 /* Build configuration list for PBXNativeTarget "Food Delivery" */;
 			buildPhases = (
+				1BF7B358A639138328137CAE /* [CP] Check Pods Manifest.lock */,
 				F68103EC2BC98C0800556D62 /* Sources */,
 				F68103ED2BC98C0800556D62 /* Frameworks */,
 				F68103EE2BC98C0800556D62 /* Resources */,
+				3C2EEFFC28968DB37AD1E509 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Food Delivery";
+			packageProductDependencies = (
+				F6A8892C2BD6BB66000A8BA3 /* FirebaseAnalytics */,
+				F6A8892E2BD6BB66000A8BA3 /* FirebaseAuth */,
+				F6A889302BD6BB66000A8BA3 /* FirebaseDatabase */,
+				F6A889322BD6BB66000A8BA3 /* FirebaseDatabaseSwift */,
+				F6A889342BD6BB66000A8BA3 /* FirebaseFirestore */,
+				F6A889362BD6BB66000A8BA3 /* FirebaseFunctions */,
+				F6A889382BD6BB66000A8BA3 /* FirebaseStorage */,
+				F6A8893B2BD6BC6C000A8BA3 /* GoogleSignIn */,
+				F6A8893D2BD6BC6C000A8BA3 /* GoogleSignInSwift */,
+			);
 			productName = "Food Delivery";
 			productReference = F68103F02BC98C0800556D62 /* Food Delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +241,10 @@
 				Base,
 			);
 			mainGroup = F68103E72BC98C0800556D62;
+			packageReferences = (
+				F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F6A8893A2BD6BC6C000A8BA3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = F68103F12BC98C0800556D62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68103FD2BC98C0A00556D62 /* Assets.xcassets in Resources */,
+				F6C6070A2BDBEB3C007A4AD5 /* GoogleService-Info.plist in Resources */,
 				F68104002BC98C0A00556D62 /* Base in Resources */,
 				F68103FB2BC98C0800556D62 /* Base in Resources */,
 			);
@@ -173,20 +268,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BF7B358A639138328137CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food Delivery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C2EEFFC28968DB37AD1E509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food Delivery/Pods-Food Delivery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food Delivery/Pods-Food Delivery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Food Delivery/Pods-Food Delivery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F68103EC2BC98C0800556D62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64B20302BD752D2009BD3CA /* LoginViewController.swift in Sources */,
 				F68103F82BC98C0800556D62 /* ViewController.swift in Sources */,
 				F68103F42BC98C0800556D62 /* AppDelegate.swift in Sources */,
+				F65D92632BD93101000E7C14 /* ValidationViewController.swift in Sources */,
+				F63C688F2BD7467200A5947B /* Alerta.swift in Sources */,
 				F685AE5F2BCEBD5E002767C0 /* FeaturedCollectionViewCell.swift in Sources */,
-				F68206692BCD77ED00FF67BA /* ProfileViewController.swift in Sources */,
+				F68206692BCD77ED00FF67BA /* RateFoodViewController.swift in Sources */,
+				F65D92692BD93865000E7C14 /* NumeroModel.swift in Sources */,
+				F65D92672BD936FC000E7C14 /* NumeroData.swift in Sources */,
 				F68104092BC991C200556D62 /* CategoriesViewController.swift in Sources */,
 				F68103F62BC98C0800556D62 /* SceneDelegate.swift in Sources */,
+				F6A889402BD6BD47000A8BA3 /* CadastroViewController.swift in Sources */,
 				F68206672BCD6B7500FF67BA /* TrackFoodViewController.swift in Sources */,
+				F65D92652BD93192000E7C14 /* NumeroManager.swift in Sources */,
 				F6C3FD412BCD58D000C2E99C /* FoodCategoryCollectionViewCell.swift in Sources */,
 				F681040C2BC9960900556D62 /* CategoriesCollectionViewCell.swift in Sources */,
+				F61E1C172BD7E12D00E2D238 /* ProfileViewController.swift in Sources */,
 				F614A97C2BC9BDB9003A693A /* FoodCategoryViewController.swift in Sources */,
 				F6550B702BC9A5170061C33F /* SpecialMenuCollectionViewCell.swift in Sources */,
 			);
@@ -251,7 +396,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -314,7 +459,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -335,6 +480,7 @@
 		};
 		F68104052BC98C0A00556D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A451CB437B8EDB205AA1E159 /* Pods-Food Delivery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,9 +489,11 @@
 				DEVELOPMENT_TEAM = LZ32UK447H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Food Delivery/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Solicitamos sua localização para rastrear seu pedido.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +511,7 @@
 		};
 		F68104062BC98C0A00556D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355808CC80434F97C7AB6FE1 /* Pods-Food Delivery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,9 +520,11 @@
 				DEVELOPMENT_TEAM = LZ32UK447H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Food Delivery/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Solicitamos sua localização para rastrear seu pedido.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,6 +562,73 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		F6A8893A2BD6BC6C000A8BA3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6A8892C2BD6BB66000A8BA3 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F6A8892E2BD6BB66000A8BA3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F6A889302BD6BB66000A8BA3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F6A889322BD6BB66000A8BA3 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		F6A889342BD6BB66000A8BA3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F6A889362BD6BB66000A8BA3 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F6A889382BD6BB66000A8BA3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8892B2BD6BB66000A8BA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F6A8893B2BD6BC6C000A8BA3 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8893A2BD6BC6C000A8BA3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		F6A8893D2BD6BC6C000A8BA3 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A8893A2BD6BC6C000A8BA3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F68103E82BC98C0800556D62 /* Project object */;
 }
